@@ -28,19 +28,19 @@ mesh-preproc/
 ### 1️⃣ Clone or copy the project
 ```bash
 cd path/to/your/folder
-
+---
 ### 2️⃣ Create a virtual environment
 ```bash
 python -m venv venv
-
+---
 ### 3️⃣ Activate the virtual environment
 ```bash
 venv\Scripts\activate
-
+---
 ### 4️⃣ Install dependencies
 ```bash
 pip install numpy matplotlib tqdm trimesh pandas
-
+---
 ### ▶️ Running the Project
 To execute the full preprocessing pipeline for all .obj files:
 ```bash
@@ -57,6 +57,7 @@ Quantize and reconstruct
 Compute MSE/MAE errors
 
 Generate bar plots and a summary CSV in outputs/
+----
 
 📊 Outputs
 | Folder/File           | Description                                          |
@@ -64,7 +65,7 @@ Generate bar plots and a summary CSV in outputs/
 | `outputs/*.npy`       | Normalized, quantized, and reconstructed vertex data |
 | `outputs/plots/`      | MSE per-axis error bar charts                        |
 | `outputs/summary.csv` | Per-mesh MSE and MAE results for both methods        |
-
+---
 🧠 Key Concepts Used
 
 Normalization: Scales mesh vertices using Min–Max and Unit Sphere methods
